@@ -1,0 +1,20 @@
+<div id="<%= dom_id project %>">
+  <p>
+    <strong>Title:</strong>
+    <%= project.title %>
+  </p>
+  <p>
+    Posted <%= time_tag project.created_at, "data-local": "time-ago" %>
+  </p>
+
+  <p>
+  <strong> <%= pluralize project.comments.count, "comment" %></strong>
+</p>
+
+  <p>
+    <strong>Content:</strong>
+    <%= project.content %>
+  </p>
+
+</div>
+ 
